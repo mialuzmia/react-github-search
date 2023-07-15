@@ -18,7 +18,6 @@ function App() {
 
   const handleChange = (e) => {
     setInputValue(e.target.value)
-    console.log(inputValue)
 
   }
 
@@ -33,7 +32,6 @@ function App() {
       setuserData(response.data)
       
       setstatus(response.status)
-      console.log(response)
       
     } catch (error) {
       console.error('error captured: ' + error)
@@ -48,7 +46,6 @@ function App() {
       const response = await Axios.get(`https://api.github.com/users/${userData.login}/repos`) 
       
       setReposData(response.data)
-      console.log(response.data)
 
       
     } catch (error) {

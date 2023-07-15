@@ -33,7 +33,7 @@
 	width: 80%;
 	color: var(--text-color);
 	font-size: 1.1rem;
-	background-color: transparent;
+	background-color: var(--second-backgroundcolor);
 }
 .form__search-button {
 	width: 1.125rem;
